@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Blogg</title>
+    <link th:rel="stylesheet" th:href="@{/post.css}">
 </head>
 <body>
-<h1 th:text=""/>
+    <div th:class="container">
+     <h1>Skriv här:<h1/>
+         <div th:each="post : ${postList}">
+             
+    </div>
 
 </body>
 </html>

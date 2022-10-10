@@ -1,4 +1,6 @@
 package com.example.blogg.dto;
 
-public class CreatePostDTO {
+public record CreatePostDTO(String title, String description) {
+
+
 }
